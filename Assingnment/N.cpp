@@ -15,8 +15,8 @@ void display(candyBar A){
 } 
 int main (){
 
-	candyBar P1 [3] ;
-	display({"Domino" ,25,400});
-	display({"Red Hat" ,40,600});
-	display({"Domino" ,50,800});
+	candyBar P1 [3] ={{"Domino" ,25,400},{"Red Hat" ,40,600},{"Domino" ,50,800}};
+	display(P1[0]);
+	display(P1[1]);
+	display(P1[2]);
 }
