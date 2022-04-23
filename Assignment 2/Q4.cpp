@@ -2,16 +2,20 @@
 using namespace std;
 
 int main (){
-	int a ;
-	int count = 0;
-	int sum=0;
-	cout <<"Enter Num(for Terminate 0): "<<endl;
-	cin >> a;
-	while (a!=0){
-		count+=1;
-		sum+=a;
-		cout<< "cumulative sum of the entries to date "<<count<<"->"<< sum<< endl;
-		cout <<"Enter Num(for Terminate 0): "<<endl;
-		cin >> a;
+	// in 1st year
+	// Daphne invests 110$ and Cleo invests 105$
+	int Dinvest =110;
+	float Cinvest = 105;
+	short years =1;
+	while (Cinvest<=Dinvest){
+		years+=1;
+		Dinvest += 10;
+		Cinvest = Cinvest+ Cinvest*.05;
 	}
+	cout << years<< " years it takes for the value of Cleo's investment to exceed the value of Daphne's investment "<< endl;
+	cout<<"value of Daphne's investment : " << Dinvest<< endl;
+	cout<<"value of Cleo's investment : " << Cinvest<< endl;
+
+
+	return 0;
 }
